@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>祝福广西</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link href="/static/css/main.css" rel="stylesheet">
+{#    <link href="/static/css/main.css" rel="stylesheet">#}
+{#    <link href="/static/css/index.css" rel="stylesheet">#}
+    <link href="/static/css/bless/editor.css" rel="stylesheet">
+</head>
+<body>
+
+    <img src='/static/images/map_bg.jpg'  class="body_bg" />
+
+    <div class='back'>
+        <div class='back_btn'>
+            <div onclick="javascript:history.go(-1)" >返回</div>
+            <div ></div>
+        </div>
+    </div>
+
+    <div class="editor" id="dialog" >
+        <textarea class="text" placeholder="请输入祝福语"></textarea>
+        <div class="btn">
+{#            <div class="close"  onclick=' changeDialog()'>取消</div>#}
+            <div class="confirm" onclick="confirm()">送出祝福</div>
+        </div>
+{#        <div class="origin">#}
+{#            <div>#}
+{#                <img class="origin_image" src="/static/images/logo.jpg">#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+
+
+
+</body>
+<script>
+    function changeDialog(){
+        if (document.getElementById("dialog").style.display == 'block')
+            document.getElementById("dialog").style.display ='none'
+        else
+            document.getElementById("dialog").style.display = 'block'
+    }
+    function confirm(){
+        alert("发送成功")
+{#        changeDialog()#}
+    }
+</script>
+</html>

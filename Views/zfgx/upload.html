@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>祝福广西</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link href="/static/css/main.css" rel="stylesheet">
+{#    <link href="/static/css/main.css" rel="stylesheet">#}
+{#    <link href="/static/css/index.css" rel="stylesheet">#}
+    <link href="/static/css/upload.css" rel="stylesheet">
+</head>
+<body>
+    <div class='xx_back'>
+        <div class='back_btn'>
+            <div onclick="javascript:history.go(-1)" >返回</div>
+            <div ></div>
+        </div>
+    </div>
+
+{#    todo 上传照片  识别结果#}
+
+
+    <div class='xx_box'>
+        <div class='header'>
+            <div class='title'>任务：寻找“三婆石头"</div>
+            <div class='content'>
+                <div class='image'>
+                    <img src='/static/images/swiper.jpg'/>
+                </div>
+                <div class='des'>
+                    <div class='summary'>钦州三娘湾是广西十佳景区之一，位于广西壮族自治区钦州市犀牛脚镇南海北部湾沿岸。南邻北部湾，背靠乌雷山，掩映在枝繁叶茂的红树林里的海滩洁白柔软，站在如天外流星坠落海滩的三婆石上，朝可观旭日东升，晚可赏夕阳日落斜照，还可拜乌雷伏波庙、游威德寺、观东汉大将风采。更美妙的是，登上渔船出海观光，可以捕捉海鱼，吹吹海风，还能够看看珍奇的中华白海豚。</div>
+                    <div url='/pages/article/article' class='more'>详情></div>
+                </div>
+            </div>
+        </div>
+        <div style="height:15px;"></div>
+
+        <div class='header'>
+            <div class='title'>奖励</div>
+            <div class='content'>
+                <div class='image'>
+                    <img src='/static/images/swiper.jpg'/>
+                </div>
+                <div class='des'>
+                    <div class='summary'>祝福卡 * 1</div>
+                </div>
+            </div>
+        </div>
+        <div class='header'>
+            <div class='content'>
+                <div class='image'>
+                    <img src='/static/images/swiper.jpg'/>
+                </div>
+                <div class='des'>
+                    <div class='summary'>积分 * 5</div>
+                </div>
+            </div>
+        </div>
+
+        <div class='xx_btn'>
+
+            <div class='mode mode_bg_sub' catchtap='chooseImage'>
+                <div class='node' hover-class="click">
+                    <img src='/static/images/image.png'/>
+                </div>
+            </div>
+
+            <div class='mode mode_bg_center' catchtap='clickCamera'>
+                <div class='node level_color_1'
+                    hover-class="click" >
+                    <img class='image'  src='/static/images/camera_gray.png'/>
+                </div>
+            </div>
+
+
+            <div class='mode mode_bg_sub' catchtap='clickToPageMy' onclick="javascript: window.parent.location.href='/zfgx/result/'" >
+                <div class='node' hover-class="click">
+                    <img src='/static/images/ask.png' />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

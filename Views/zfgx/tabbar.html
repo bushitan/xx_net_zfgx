@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>祝福广西</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link href="/static/css/main.css" rel="stylesheet">
+{#    <link href="/static/css/main.css" rel="stylesheet">#}
+{#    <link href="/static/css/index.css" rel="stylesheet">#}
+    <link href="/static/css/tabbar.css" rel="stylesheet">
+</head>
+<body>
+
+    <iframe src="/zfgx/index/" class="tab_index" frameborder="0" id="tabbar_index"></iframe>
+    <iframe src="/zfgx/my/" class="tab_my" frameborder="0" id="tabbar_my"></iframe>
+
+    <div class="tabbar">
+        <div class="node">
+            <div class="icon">
+                <img class="icon_img" src="/static/images/error.png"/>
+            </div>
+            <div class="name" id="index" onclick="index()">祝福墙</div>
+        </div>
+        <div class="node">
+            <div class="icon">
+                <img class="icon_img"  src="/static/images/right.png"/>
+            </div>
+            <div class="name" id="my" onclick="my()">我的祝福</div>
+        </div>
+    </div>
+</body>
+<script>
+    function index(){
+        document.getElementById("tabbar_index").style.display = "block";
+        document.getElementById("tabbar_my").style.display = "none";
+    }
+    function my(){
+        document.getElementById("tabbar_index").style.display = "none";
+        document.getElementById("tabbar_my").style.display = "block";
+    }
+</script>
+</html>

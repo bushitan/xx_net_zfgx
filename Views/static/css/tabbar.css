@@ -1,0 +1,29 @@
+
+
+.tabbar{
+    position: fixed;
+    left:0;
+    right:0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 9pt;
+    padding :5px 0;
+    background-color: #fff;
+}
+.tabbar .icon{
+    display: flex;
+    justify-content: center;
+}
+.tabbar .icon_img{
+    width:23px;
+    height:23px;
+}
+.tab_index,.tab_my{
+    width: 100vw;
+    height: calc( 100vh - 52px);
+}
+/*.tab_index{*/
+.tab_my{
+    display: none;
+}

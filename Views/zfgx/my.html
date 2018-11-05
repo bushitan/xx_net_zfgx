@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello React!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link href="/static/css/main.css" rel="stylesheet">
+{#    <link href="/static/css/main.css" rel="stylesheet">#}
+{#    <link href="/static/css/index.css" rel="stylesheet">#}
+    <link href="/static/css/my.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--pages/my/my.wxml-->
+    <div class='logo'>
+            <div>
+                <img src='/static/images/logo.jpg'/>
+            </div>
+            <div style='height:5px;'></div>
+            <div>this.丰兄</div>
+{#        </block>#}
+{#        <block wx:else>#}
+{#            <button size='mini' bindgetuserinfo='getUserInfo'open-type="getUserInfo" lang="zh_CN"  >点击登陆</button>#}
+{#        </block>#}
+    </div>
+
+    <div class='score'>
+        <div>祝福积分</div>
+        <div class='des'>195分</div>
+    </div>
+
+    <div url='/pages/ladder/ladder' class='score'>
+        <div>天梯榜</div>
+        <div class='des'>第15556位</div>
+    </div>
+
+    <div class='card'>
+        <div class='header'>
+            <div class='title'>我的祝福卡</div>
+            <div class='des'>7/14</div>
+        </div>
+        <div class='gallery'>
+{#            <block wx:for="{{list}}" wx:key="index">#}
+                <div class='node'>
+                    <div class='image_box'>
+                        <img src='/static/images/swiper.jpg' catchtap='clickCard'/>
+                        <div class='des'>
+                            <label class='share'>赠送</label>
+                            <label>数量:0</label>
+                        </div>
+                    </div>
+                </div>
+{#            </block>#}
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>祝福广西</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link href="/static/css/main.css" rel="stylesheet">
+{#    <link href="/static/css/main.css" rel="stylesheet">#}
+{#    <link href="/static/css/index.css" rel="stylesheet">#}
+    <link href="/static/css/result.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class='xx_back'>
+        <div class='back_btn'>
+            <div onclick="javascript:history.go(-1)" >返回</div>
+            <div ></div>
+        </div>
+    </div>
+
+
+
+    <div class='xx_box'>
+
+        <!-- <navigator url='/pages/comment/comment' class='dialog' >努力识别中...</navigator> -->
+
+        <div class='xx_card'>
+            <div class='xx_image'>
+                <img class='org' src='/static/images/swiper.jpg'  />
+            </div>
+
+{#            <div style='height:15px'></div>#}
+        </div>
+        <!-- <div catchtap='back'>重新识别</div>
+       -->
+    </div>
+
+{#    <div class='loading ' >#}
+{#        <label class='toast'>努力识别中..</label>#}
+{#    </div>#}
+    <div class='xx_btn' >
+        <div class='mode mode_bg_sub' catchtap='back'>
+            <div class='node' hover-class="click">
+                <img src='/static/images/right.png'/>
+            </div>
+        </div>
+        <div class='center'>钦州三娘湾</div>
+        <!-- <div class='mode mode_bg_center' catchtap='clickCamera'>
+            <div class='node level_color_1'
+                hover-class="click" >
+                <image class='image'  src='../../images/camera_gray.png'></image>
+            </div>
+        </div> -->
+
+        <div class='mode mode_bg_sub' onclick=' changeDialog()'>
+            <div class='node' hover-class="click">
+                <!-- 错 -->
+                <img src='/static/images/error.png'/>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="xx_dialog" id="dialog" >
+{#        <div class="title"></div>#}
+{#        <textarea class="text" placeholder="请输入祝福语"></textarea>#}
+        <h4>识别错误反馈</h4>
+        <div>
+            <input type="radio" name="city" /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio"  name="city" /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio"  name="city" /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio" name="city"  /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio" name="city" /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio"  name="city" /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio"  name="city" /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio" name="city"  /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio" name="city" /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio"  name="city" /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio"  name="city" /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio" name="city"  /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio"  name="city" /><span>南宁</span>
+        </div>
+        <div>
+            <input type="radio" name="city"  /><span>南宁</span>
+        </div>
+        <div class="btn">
+            <div class="close"  onclick=' changeDialog()'>取消</div>
+            <div class="confirm" onclick="confirm()">确定</div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function changeDialog(){
+        if (document.getElementById("dialog").style.display == 'block')
+            document.getElementById("dialog").style.display ='none'
+        else
+            document.getElementById("dialog").style.display = 'block'
+    }
+    function confirm(){
+        alert("发送成功")
+        changeDialog()
+        window.history.go(-2);
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

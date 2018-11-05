@@ -1,0 +1,106 @@
+
+
+
+
+/* 背景 */
+.xx_bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    z-index: -999;
+}
+
+/* 倒计时 */
+.deadline{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.deadline .content{
+    padding: 12px;
+    background-color: rgba(98, 14, 14,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deadline label{
+    color: #ffbd2e;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bolder;
+}
+.deadline .center{
+    margin:0 15px;
+}
+/*人物*/
+
+.hero_he,.hero_she{
+    width: 72px;
+    height: auto;
+    /*top: -30px;*/
+    /*z-index: -999;*/
+    /* height: 100%; */
+}
+.qr{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 89px;
+    height: 104px;
+}
+
+/*地图*/
+.map{
+    width: 850px;
+    padding: auto;
+   margin:0 auto;
+    position: relative;
+}
+.map_image{
+    width: 800px;
+    height: auto;
+   margin:0 auto;
+}
+
+
+
+
+
+
+.map .fire{
+    position: absolute;
+    /*top: 160px;*/
+    /*left: 180px;*/
+    /*color: #ffbc34;*/
+    color: #ec3514;
+    /*color: #4c1313;*/
+
+    font-size: 1.2em;
+    padding: 3px 8px;
+    border-radius: 5px;
+    /*background-color: rgba(98, 14, 14,0.6);*/
+    background-color: rgba(255,255,255,0.6);
+}
+.map .select{
+    color: #ffffff;
+    background-color: rgba(98, 14, 14,0.6);
+    z-index: 999999;
+}
+.map  .fire img {
+    margin: auto;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+
+
+
+
+
+

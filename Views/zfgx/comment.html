@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>祝福广西</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link href="/static/css/main.css" rel="stylesheet">
+{#    <link href="/static/css/main.css" rel="stylesheet">#}
+{#    <link href="/static/css/index.css" rel="stylesheet">#}
+    <link href="/static/css/comment.css" rel="stylesheet">
+</head>
+<body>
+    <div class='xx_back'>
+        <div class='back_btn'>
+            <div onclick="javascript:history.go(-1)" >返回</div>
+            <div ></div>
+        </div>
+    </div>
+
+
+    <div class='comment'>
+        <div class='node'>
+            <div>
+                <img class='logo' src='https://wx.qlogo.cn/mmopen/vi_32/JHHq5CW0mrzeguxXmtIgMGCC7GK90CRwKo6K5TugmmlZscDBfnib5Lu5GQMHzQLam2788iaem0MibTBJBngaB9pzg/132'/>
+            </div>
+            <div class='center'>
+                <div class='title'>
+                    <div class='name'>平凡人生</div>
+                    <div  class='zan'>
+                        <img class='icon' src='/static/images/point.png'/>
+                        <label>7</label>
+                    </div>
+                </div>
+                <div class='content'>国庆六十周年长安街沿线花卉布置工作已全面展开</div>
+            </div>
+        </div>
+        <div class='node'>
+            <div>
+                <img class='logo' src='https://wx.qlogo.cn/mmopen/vi_32/JHHq5CW0mrzeguxXmtIgMGCC7GK90CRwKo6K5TugmmlZscDBfnib5Lu5GQMHzQLam2788iaem0MibTBJBngaB9pzg/132'/>
+            </div>
+            <div class='center'>
+                <div class='title'>
+                    <div class='name'>平凡人生</div>
+                    <div  class='zan'>
+                        <img class='icon' src='/static/images/point.png'/>
+                        <label>7</label>
+                    </div>
+                </div>
+                <div class='content'>国庆六十周年长安街沿线花卉布置工作已全面展开</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class='ai'>
+        <!-- <view class='phone'>AI识别柳宗元雕像</view>
+        <view style='height:20px;'></view> -->
+        <div url='/pages/emoji/emoji' catchtap='sendZan' class='btn'>
+            <div class='content'>
+                <img  src='/static/images/editor_white.png'/>
+                <label onclick=' changeDialog()'>写祝词</label>
+            </div>
+        </div>
+        <div style='height:10px;'></div>
+        <!-- <view class='phone' catchtap='chooseImage'>从相册选择></view> -->
+    </div>
+
+
+
+    <div class="xx_dialog" id="dialog" >
+{#        <div class="title"></div>#}
+        <textarea class="text" placeholder="请输入祝福语"></textarea>
+        <div class="btn">
+            <div class="close"  onclick=' changeDialog()'>取消</div>
+            <div class="confirm" onclick="confirm()">确定</div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function changeDialog(){
+        if (document.getElementById("dialog").style.display == 'block')
+            document.getElementById("dialog").style.display ='none'
+        else
+            document.getElementById("dialog").style.display = 'block'
+    }
+    function confirm(){
+        alert("发送成功")
+        changeDialog()
+    }
+</script>
+</html>

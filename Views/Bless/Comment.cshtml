@@ -1,0 +1,130 @@
+﻿@model Senparc.Weixin.MP.Helpers.JsSdkUiPackage
+@using Senparc.Weixin.MP.AdvancedAPIs.OAuth
+
+@{
+    Layout = null;
+    var resultwer = Session["OAuthAccessToken"] as OAuthAccessTokenResult;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>祝福广西</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link href="~/xxcss/css/pc/main.css" rel="stylesheet" />
+    <link href="~/xxcss/css/bless/comment.css" rel="stylesheet">
+</head>
+<body>
+    <div class='xx_back'>
+        <div class='back_btn'>
+            <div onclick="javascript:history.go(-1)">返回</div>
+            <div></div>
+        </div>
+    </div>
+    <div class='tab'>
+        <div class='tab_btn'>
+            <div>我的祝福语</div>
+            <div></div>
+            @*{#            <div class="more" onclick="javascript: window.parent.location.href='/zfgx/bless/comment_self/'">更多</div>#}*@
+        </div>
+    </div>
+
+    <div class='comment'>
+        <div class='node'>
+            <div>
+                <img class='logo' src='https://wx.qlogo.cn/mmopen/vi_32/JHHq5CW0mrzeguxXmtIgMGCC7GK90CRwKo6K5TugmmlZscDBfnib5Lu5GQMHzQLam2788iaem0MibTBJBngaB9pzg/132' />
+            </div>
+            <div class='center'>
+                <div class='content'>国庆六十周年长安街沿线花卉布置工作已全面展开</div>
+                <div class="cover">
+                    <div class="add_cover">生成海报</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*{#      <div class='self'>
+            #}
+            {#        <div class='node'>
+                #}
+                {#            <img class='cover' src='/static/images/logo.jpg' />#}
+                {#
+            </div>#}
+            {#
+        </div>#}*@
+
+    <div class='tab'>
+        <div class='tab_btn'>
+            <div>大家祝福语</div>
+            <div></div>
+        </div>
+    </div>
+    <div class='comment'>
+        <div class='node'>
+            <div>
+                <img class='logo' src='https://wx.qlogo.cn/mmopen/vi_32/JHHq5CW0mrzeguxXmtIgMGCC7GK90CRwKo6K5TugmmlZscDBfnib5Lu5GQMHzQLam2788iaem0MibTBJBngaB9pzg/132' />
+            </div>
+            <div class='center'>
+                <div class='title'>
+                    <div class='name'>平凡人生</div>
+                    <div class='zan'>
+                    </div>
+                </div>
+                <div class='content'>国庆六十周年长安街沿线花卉布置工作已全面展开</div>
+                <div>
+                    <img class='origin' src='~/xximage/images/logo.jpg' />
+                </div>
+                <div class="cover">
+                    @*{#                    <div>
+                        #}*@
+                    <img class='icon' src='~/xximage/images/point.png' />
+                    <label>7</label>
+                    @*{#
+                        </div>#}*@
+                    <div class="add_cover">生成海报</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="openid">@Session["OpenId"]</div>
+    @if (resultwer != null)
+    {
+        <div id="unionid" style="display:none">@resultwer.unionid</div>
+    }
+    else
+    {
+        <div id="unionid" style="display:none"></div>
+    }
+    <div id="appid" style="display:none">@Model.AppId</div>
+    <div id="timestamp" style="display:none">@Model.Timestamp</div>
+    <div id="noncestr" style="display:none">@Model.NonceStr</div>
+    <div id="signature" style="display:none">@Model.Signature</div>
+
+    <div class="xx_dialog" id="dialog">
+        @*{#        <div class="title"></div>#}*@
+        <textarea class="text" placeholder="请输入祝福语"></textarea>
+        <div class="btn">
+            <div class="close" onclick=' changeDialog()'>取消</div>
+            <div class="confirm" onclick="confirm()">确定</div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function changeDialog() {
+        if (document.getElementById("dialog").style.display == 'block')
+            document.getElementById("dialog").style.display = 'none'
+        else
+            document.getElementById("dialog").style.display = 'block'
+    }
+    function confirm() {
+        alert("发送成功")
+        changeDialog()
+    }
+</script>
+</html>
+

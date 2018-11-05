@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=1280,initial-scale=0.27" />
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+
+    <title>祝福广西</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link href="/static/css/pc/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+
+    <img class='xx_bg' src='/static/images/map_bg.jpg'/>
+    <div class='deadline'>
+        <div class='content'>
+            <img class='hero_he' src='/static/images/hero_he.png'/>
+            <div class="center">
+                <div>距离广西壮族自治区成立六十周年</div>
+                <div>还有<label>50</label>天</div>
+            </div>
+            <img class='hero_she' src='/static/images/hero_she.png'/>
+
+        </div>
+    </div>
+
+    <div class="map">
+        <img class='map_image' src='/static/images/map_org4.png'/>
+        <div class="area"></div>
+    </div>
+    <img class='qr' src='/static/images/qr_zfgx.jpg'/>
+</body>
+
+<script>
+
+    //地图
+    var area_list =  [
+            {
+                name:"百色", id: 1, top: 210, left: 180,
+            },
+            {
+                name: "崇左", id: 2, top: 340, left: 230,
+            },
+            {
+                name: "河池", id: 3, top: 130, left: 300,
+            },
+            {
+                name: "南宁", id: 4, top: 300, left: 340,
+            },
+            {
+                name: "防城港", id: 5, top: 420, left: 300,
+            },
+            {
+                name: "柳州", id: 6, top: 100, left: 440,
+            },
+            {
+                name: "来宾", id: 7, top: 220, left: 440,
+            },
+            {
+                name: "贵港", id: 8, top: 270, left: 500,
+            },
+            {
+                name: "钦州", id: 9, top: 370, left: 410,
+            },
+            {
+                name: "北海", id: 10, top: 440, left: 440,
+            },
+            {
+                name: "玉林", id: 11, top: 370, left: 510,
+            },
+            {
+                name: "桂林", id: 12, top: 50, left: 540,
+            },
+            {
+                name: "贺州", id: 13, top: 160, left: 640,
+            },
+            {
+                name: "梧州", id: 14, top: 270, left: 600,
+            },
+]
+    map()
+    function map(){
+        var map_width = $('.map').width()
+        var map_height = $('.map').height()
+        console.log("map",map_width,map_height)
+
+        var ratio = 2.2857142857142857142857142857143;
+        for(var i = 0;i<area_list.length;i++){
+            var temp = area_list[i]
+            var area = '<div class="fire area_'+ temp.id +'" '+
+                ' onclick="clickArea('+i+')"'+
+                ' style="left:'+ temp.left/2*ratio +'px;top:'+ temp.top/2*ratio +'px" >'+
+                    '<img  src="/static/images/my_select.png"/>'+
+                    '<span>'+temp.id+'k</span>'+
+                    '<div>'+temp.name+'</div>'+
+                '</div>'
+            $('.area').append(area)
+        }
+        $('.area_4').addClass('select')
+    }
+
+    //点击区域
+    function clickArea(area_index){
+        var area = area_list[area_index]
+        $('.fire').removeClass('select')
+        $('.area_' + area.id).addClass('select')
+        $('.wall_title').html(area.name)
+        $('.wall_zan').html(area.id)
+
+    }
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

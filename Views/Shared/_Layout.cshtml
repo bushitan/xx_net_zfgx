@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title -祝福广西</title>
+    <meta name="keywords" content="广西周年庆，祝福广西，索骏科技" />
+    <meta name="description" content="" />
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/darktooltip.min.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Content/danktooltip/js/jquery.darktooltip.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0d0c119eba879f1f28150f166d245966";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    @RenderSection("HeaderContent", false)
+</head>
+<body>
+    <div class="content">
+        <div class="senparc-header">
+            <div class="wrapper">
+                <div class="logo">
+                    @*<a href="http://www.senparc.com">
+                        <img src="/images/v2/logo .png" alt="微信SDK" />
+                    </a>*@
+                </div>
+                <div class="header-title">
+                    <a href="@Url.Action("Index", "Home")" title="祝福广西，请为广西点赞">祝福广西，请为广西点赞</a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="nav-catalog">
+                        <li><a href="@Url.Action("Index", "Home")">首页</a></li>
+                        <li><a href="@Url.Action("Index", "Menu")">菜单</a></li>
+          
+              
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- 公告 -->
+        <div id="noticearea">
+            <div class="wrapper">
+                @*<span>重要公告（2017-2-22）：Nuget 上的 Senparc.Weixin.MP.dll v14.3.126 有一个统一订单的 bug，已经在 <a href="https://www.nuget.org/packages/Senparc.Weixin.MP/14.3.127" target="_blank">v14.3.127</a> 中修正。</span>*@
+                @*<span>2017年6月16日已发布新版本，改进诸多功能，并发布企业微信（Senparc.Weixin.Work）测试版，支持 .net core / .net 4.5。<a href="http://mp.weixin.qq.com/s/G77RaeYnVuk9zciNrop9aA" target="_blank">点击这里查看</a>。</span>*@
+                @*<span>Senparc 官方微信开发教程《微信开发深度解析：公众号、小程序高效开发秘籍》已经出版，<a href="https://book.weixin.senparc.com/book/link?code=sdk-banner" target="_blank">点击这里购买正版</a>。</span>*@
+                <span>
+                @*Senparc 官方微信开发视频教程《微信公众号+小程序快速开发》已经上线，陆续更新中，<a href="https://book.weixin.senparc.com/book/videolinknetease?code=sdk-banner" target="_blank">【点击这开始学习】</a>。<br />
+                    Senparc 官方微信开发教程《微信开发深度解析：公众号、小程序高效开发秘籍》已经出版（第3次印刷），<a href="https://book.weixin.senparc.com/book/link?code=sdk-banner" target="_blank">【点击这里购买正版】</a>。<br /></span>*@
+            </div>
+        </div>
+        @if (ViewData["HideBanner"] == null)
+        {
+
+            <div class="senparc-jumbotron">
+                <div class="wrapper">
+                    <div class="container-left">
+                        <ul>
+                    
+                        </ul>
+                    </div>
+                    <div class="container-right">
+                        <span class="container-span container-span-title">广西周年庆；为广西打Call</span>
+                        <span class="container-span">
+                            @*全面支持：<br />
+                                微信公众号、小程序、微信支付、企业号、开放平台*@
+                            @*<span>全面支持：微信公众号、小程序、微信支付、</span>
+                            <span>JS-SDK、开放平台、企业号、企业微信……</span>*@
+                        </span>
+                        @*<span class="container-span">公众号+微信支付 SDK：Senparc.Weixin.MP.dll</span>
+                            <span class="container-span">企业号 SDK：Senparc.Weixin.QY.dll</span>
+                            <span class="container-span">开放平台 SDK：Senparc.Weixin.Open.dll</span>*@
+                        @*<span class="container-p">公众号+微信支付 SDK：Senparc.Weixin.MP.dll</span>
+                            <span class="container-p">企业号 SDK：Senparc.Weixin.QY.dll</span>
+                            <span class="container-p">开放平台 SDK：Senparc.Weixin.Open.dll</span>*@
+                        @*<span class="container-p">Senaprc.Weixin SDK 是目前使用率最高的微信 .NET SDK，</span>
+                        <span class="container-p">也是最受欢迎的 .NET 开源项目之一。</span>
+                        <span class="container-p">快来使用 Senparc.Weixin SDK 轻松打造微信各平台的扩展应用吧！</span>*@
+                        <div class="contact">
+                            @*<div class="contatc-name">400客服热线：400-031-8816</div>
+                            <div class="clear"></div>
+                            <div id="qqGroups">QQ群载入中……</div>
+                            <div class="clear"></div>*@
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        }
+
+        @if (!IsSectionDefined("catalog"))
+        {
+            <div class="catalog">
+                @*   <a href="@Url.Action("Index", "Menu")">自定义菜单设置工具</a>*@
+
+            </div>
+        }
+        @RenderBody()
+        <div class="feedback">
+            <div class="wrapper">
+                <div id="book-title"></div>
+                <div class="feedback-info">
+                    <div class="crowdfunding-note center">
+                        @*<img src="~/images/book-cover-front-small-3d-transparent.png" />*@
+
+                        @*<p class="crowdfunding-note center">
+
+                        </p>*@
+                        
+                    </div>
+                </div>
+                @*<div class="feedback-action">
+                        <img src="~/images/book-cover-front-small-3d.png" />
+                        <p>图书封面</p>
+                        <p>&nbsp;</p>
+                    </div>*@
+                <div class="feedback-action">
+                    <p class="crowdfunding-note">
+      
+                       
+                    </p>
+                    <p class="center">
+                        @*<a href="https://book.weixin.senparc.com/book/link?code=sdk-footer" class="application" target="_blank">购买正版 Senparc 官方教程</a><br /><br />*@
+                    </p>
+
+
+                    @*<img src="/images/crowdfunding-qrcode.png"/>
+                    <p>购买或查看公告（微信扫一扫）</p>*@
+                </div>
+            </div>
+            <div class="segregate"></div>
+            <div class="wrapper">
+                <div id="book-title"></div>
+                <div class="feedback-info">
+                    <div class="crowdfunding-note center">
+                
+                    </div>
+                </div>
+                <div class="feedback-action">
+                    <p class=" top">
+    
+                    </p>
+                    <p class="center textTop">
+                       
+                    </p>
+
+
+                    @*<img src="/images/crowdfunding-qrcode.png"/>
+                <p>购买或查看公告（微信扫一扫）</p>*@
+                </div>
+            </div>
+            <div class="segregate"></div>
+            <div class="wrapper" id="donate">
+                @*<div class="feedback-info feedback-info-bs">
+                    <p>如果这个项目对你有用，</p>
+                    <p>我们欢迎各方任何形式的捐助，</p>
+                    <p>也包括参与到项目代码更新或意见反馈中来。</p>
+                    <p>谢谢！</p>
+                </div>
+                <div class="feedback-action contentTop">
+                    <img src="/images/v2/ewm_03.png" />
+                    <p>资金捐助（支付宝钱包扫一扫）</p>
+                </div>*@
+            </div>
+
+        </div>
+        <div class="footer">
+            <p class="footer-contact">
+                &nbsp;
+
+                当前运行框架：.NET Framework 4.5
+            </p>
+            <p class="footer-icon">&copy; 2018-@DateTime.Now.Year SuoJun，广西索骏科技有限公司，版权所有，保留所有权利。</p>
+        </div>
+        @RenderSection("scripts", required: false)
+        <div style="display: none;">
+           
+
+            <script>
+                //var _hmt = _hmt || [];
+                //(function () {
+                //    var hm = document.createElement("script");
+                //    hm.src = "https://hm.baidu.com/hm.js?0d0c119eba879f1f28150f166d245966";
+                //    var s = document.getElementsByTagName("script")[0];
+                //    s.parentNode.insertBefore(hm, s);
+                //})();
+
+                $(function () {
+                    loadQQGroups();
+                });
+
+                function loadQQGroups() {
+                    $.ajax({
+                        type: "get",
+                        async: false,
+                        url: "https://weixin.senparc.com/WeixinSdk/GetSdkQqGroupListJson",
+                        dataType: "jsonp",
+                        jsonp: "callbackparam", //服务端用于接收callback调用的function名的参数
+                        jsonpCallback: "success_jsonpCallback", //callback的function名称
+                        success: function (json) {
+                            $('#qqGroups').html(json[0].html);
+                            $('#contact-content li.contact-qq').darkTooltip({
+                                theme: 'light'
+                            });
+                        },
+                        error: function () {
+                            //alert('fail');
+                        }
+                    });
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
