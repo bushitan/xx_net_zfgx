@@ -1,0 +1,135 @@
+
+[[[接口调用]]]
+[2018/11/7 0:00:49]
+[线程：8]
+    URL：https://api.weixin.qq.com/sns/jscode2session?appid=wxb5f4203d6bc1d799&secret=22909174ba2862be10eb4589c8d80a90&js_code=061znryz1M4iWf0Npdyz1Vkayz1znryh&grant_type=authorization_code
+    Result：
+{"errcode":40125,"errmsg":"invalid appsecret, view more at http:\/\/t.cn\/RAEkdVq, hints: [ req_id: i.twqa00492276 ]"}
+
+[[[ErrorJsonResultException]]]
+[2018/11/7 0:00:49]
+[线程：8]
+    ErrorJsonResultException
+    AccessTokenOrAppId：null
+    URL：https://api.weixin.qq.com/sns/jscode2session?appid=wxb5f4203d6bc1d799&secret=22909174ba2862be10eb4589c8d80a90&js_code=061znryz1M4iWf0Npdyz1Vkayz1znryh&grant_type=authorization_code
+    errcode：appsecret不正确
+    errmsg：invalid appsecret, view more at http://t.cn/RAEkdVq, hints: [ req_id: i.twqa00492276 ]
+
+[[[接口调用]]]
+[2018/11/7 0:01:58]
+[线程：13]
+    URL：https://api.weixin.qq.com/sns/jscode2session?appid=wxb5f4203d6bc1d799&secret=22909174ba2862be10eb4589c8d80a90&js_code=01132tAw1DFiR90ym7Aw1waxAw132tAI&grant_type=authorization_code
+    Result：
+{"errcode":40125,"errmsg":"invalid appsecret, view more at http:\/\/t.cn\/RAEkdVq, hints: [ req_id: r04ASa0118hb39 ]"}
+
+[[[ErrorJsonResultException]]]
+[2018/11/7 0:01:58]
+[线程：13]
+    ErrorJsonResultException
+    AccessTokenOrAppId：null
+    URL：https://api.weixin.qq.com/sns/jscode2session?appid=wxb5f4203d6bc1d799&secret=22909174ba2862be10eb4589c8d80a90&js_code=01132tAw1DFiR90ym7Aw1waxAw132tAI&grant_type=authorization_code
+    errcode：appsecret不正确
+    errmsg：invalid appsecret, view more at http://t.cn/RAEkdVq, hints: [ req_id: r04ASa0118hb39 ]
+
+[[[自动注册扩展缓存完成]]]
+[2018/11/7 0:08:47]
+[线程：1]
+    注册总用时：0ms
+自动扫描程序集：0个
+扩展缓存：
+
+[[[系统日志]]]
+[2018/11/7 0:08:47]
+[线程：1]
+    系统启动
+
+[[[微信扩展缓存注册完成]]]
+[2018/11/7 0:08:47]
+[线程：1]
+    微信扩展缓存注册总用时：0ms
+扩展缓存：Senparc.Weixin.Cache.LocalContainerCacheStrategy
+
+[[[RegisterApiBind() 自动扫描程序集异常：Senparc.Weixin.MP, Version=16.4.6.197, Culture=neutral, PublicKeyToken=null]]]
+[2018/11/7 0:08:47]
+[线程：1]
+    System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 Senparc.NeuChar.ApiBind.ApiBindInfoCollection.Add(MethodInfo method, ApiBindAttribute apiBindAttr)
+   在 Senparc.NeuChar.Register.RegisterApiBind()
+
+[[[RegisterApiBind() 自动扫描程序集异常：Senparc.Weixin.Work, Version=3.1.13.198, Culture=neutral, PublicKeyToken=null]]]
+[2018/11/7 0:08:47]
+[线程：1]
+    System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 Senparc.NeuChar.ApiBind.ApiBindInfoCollection.Add(MethodInfo method, ApiBindAttribute apiBindAttr)
+   在 Senparc.NeuChar.Register.RegisterApiBind()
+
+[[[RegisterApiBind() 自动扫描程序集异常：Senparc.Weixin.WxOpen, Version=3.1.13.190, Culture=neutral, PublicKeyToken=null]]]
+[2018/11/7 0:08:47]
+[线程：1]
+    System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 Senparc.NeuChar.ApiBind.ApiBindInfoCollection.Add(MethodInfo method, ApiBindAttribute apiBindAttr)
+   在 Senparc.NeuChar.Register.RegisterApiBind()
+
+[[[接口调用]]]
+[2018/11/7 0:08:51]
+[线程：21]
+    URL：https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx15eb92053f01ff86&secret=55e9dac0dcf6d8ed52c2b1935d98fa86&code=00114Bm70IzaiI19y0m70AIOm7014BmI&grant_type=authorization_code
+    Result：
+{"access_token":"15_w3mYQPThQ2AmGDuE1x0UZdHGMYb8WHiCzIJblDmdBESuQ0Y3WSYP8oYDRKTQCSTgyeYriKq_9PouLJom616Eaw","expires_in":7200,"refresh_token":"15_30TLBXXfl8IVFu6s2JjWN7XHR8aEQ2y0Z7i05PoRdnvZrBASPhBPrln8-9c8J8egvz5utlJ_fZxWkn0DO3BiLg","openid":"oOY_U1KTeDL3W3PtecWdVp1QXi-A","scope":"snsapi_userinfo","unionid":"oAmjlwxfN1p0B0dXEkx-9sZeTAgQ"}
+
+[[[接口调用]]]
+[2018/11/7 0:08:51]
+[线程：21]
+    URL：https://api.weixin.qq.com/sns/userinfo?access_token=15_w3mYQPThQ2AmGDuE1x0UZdHGMYb8WHiCzIJblDmdBESuQ0Y3WSYP8oYDRKTQCSTgyeYriKq_9PouLJom616Eaw&openid=oOY_U1KTeDL3W3PtecWdVp1QXi-A&lang=zh_CN
+    Result：
+{"openid":"oOY_U1KTeDL3W3PtecWdVp1QXi-A","nickname":"雕","sex":1,"language":"zh_CN","city":"深圳","province":"广东","country":"中国","headimgurl":"http:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/zibC1nlwP5Z6a4IPCRMARwKhPMvvtSCicVEZl8XPDjK9ZoBRrEq1Ycto32crNBosibk9SbGK68xVu4c9URh0ib7Vzw\/132","privilege":[],"unionid":"oAmjlwxfN1p0B0dXEkx-9sZeTAgQ"}
+
+[[[接口调用]]]
+[2018/11/7 0:09:26]
+[线程：22]
+    URL：https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx15eb92053f01ff86&secret=55e9dac0dcf6d8ed52c2b1935d98fa86&code=00114Bm70IzaiI19y0m70AIOm7014BmI&grant_type=authorization_code
+    Result：
+{"errcode":40163,"errmsg":"code been used, hints: [ req_id: Z1LouA05662047 ]"}
+
+[[[ErrorJsonResultException]]]
+[2018/11/7 0:09:26]
+[线程：22]
+    ErrorJsonResultException
+    AccessTokenOrAppId：null
+    URL：https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx15eb92053f01ff86&secret=55e9dac0dcf6d8ed52c2b1935d98fa86&code=00114Bm70IzaiI19y0m70AIOm7014BmI&grant_type=authorization_code
+    errcode：40163
+    errmsg：code been used, hints: [ req_id: Z1LouA05662047 ]
+
+[[[接口调用]]]
+[2018/11/7 0:11:26]
+[线程：23]
+    URL：https://api.weixin.qq.com/sns/jscode2session?appid=wxb5f4203d6bc1d799&secret=e83c960c023d69b9a969b65247c3aff0&js_code=0111zGNR10Xfw81AlgKR1N9yNR11zGNu&grant_type=authorization_code
+    Result：
+{"session_key":"YddMv0aT7CBLSK3Z+j6aoQ==","openid":"ogWb15ZcOBIxDNWpQNSekEKnCeKM","unionid":"oAmjlw_UfKePdYbf1XWudgxSZjis"}
+
+[[[接口调用]]]
+[2018/11/7 0:11:53]
+[线程：16]
+    URL：https://api.weixin.qq.com/sns/jscode2session?appid=wxb5f4203d6bc1d799&secret=e83c960c023d69b9a969b65247c3aff0&js_code=021rubMv1wd7Ka0oEdOv1izLLv1rubMS&grant_type=authorization_code
+    Result：
+{"session_key":"YddMv0aT7CBLSK3Z+j6aoQ==","openid":"ogWb15ZcOBIxDNWpQNSekEKnCeKM","unionid":"oAmjlw_UfKePdYbf1XWudgxSZjis"}
+
+[[[接口调用]]]
+[2018/11/7 0:24:28]
+[线程：26]
+    URL：https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx15eb92053f01ff86&secret=55e9dac0dcf6d8ed52c2b1935d98fa86&code=061sSYwh0YA81y1d96xh0Y1Rwh0sSYw3&grant_type=authorization_code
+    Result：
+{"access_token":"15_mTSjcSMpEs5biJ9uLiGB8IaiUVssPFYp_YAGH0uQISsGyNPs4WTKtaFOvou-lX5pM1J5uzfHOdTcQ7gu0KXXvg","expires_in":7200,"refresh_token":"15_fc-O_NKBqI8FZ1dz2L3zF_rNdppIOSi1INCmaEZtEKJXlCEpzB62Re9m_s2V-pS5b4gnUoYMaqXv02BRV3yARA","openid":"oOY_U1OatxdJ4_ObS3bbHU00gmGo","scope":"snsapi_userinfo","unionid":"oAmjlw_UfKePdYbf1XWudgxSZjis"}
+
+[[[接口调用]]]
+[2018/11/7 0:24:28]
+[线程：26]
+    URL：https://api.weixin.qq.com/sns/userinfo?access_token=15_mTSjcSMpEs5biJ9uLiGB8IaiUVssPFYp_YAGH0uQISsGyNPs4WTKtaFOvou-lX5pM1J5uzfHOdTcQ7gu0KXXvg&openid=oOY_U1OatxdJ4_ObS3bbHU00gmGo&lang=zh_CN
+    Result：
+{"openid":"oOY_U1OatxdJ4_ObS3bbHU00gmGo","nickname":"this.丰兄","sex":1,"language":"zh_CN","city":"","province":"威克洛","country":"爱尔兰","headimgurl":"http:\/\/thirdwx.qlogo.cn\/mmopen\/vi_32\/Q0j4TwGTfTJJwz24hXvS5rh5Pp5ebiahPXT5ZRdUubdzXoXFE1g01nRrUECicD9EnIjyHibeQelBdC6fYibmuusnEw\/132","privilege":[],"unionid":"oAmjlw_UfKePdYbf1XWudgxSZjis"}
